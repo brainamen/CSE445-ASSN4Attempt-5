@@ -19,9 +19,9 @@ namespace ConsoleApp1
 
     public class Program
     {
-        public static string xmlURL = "https://brainamen.github.io/CSE445a4/Hotels.xml";
-        public static string xmlErrorURL = "https://brainamen.github.io/CSE445a4/HotelsErrors.xml";
-        public static string xsdURL = "https://brainamen.github.io/CSE445a4/Hotels.xsd";
+        public static string xmlURL = "https://brainamen.github.io/CSE445-ASSN4Attempt-5/Hotels.xml";
+        public static string xmlErrorURL = "https://brainamen.github.io/CSE445-ASSN4Attempt-5/HotelsErrors.xml";
+        public static string xsdURL = "https://brainamen.github.io/CSE445-ASSN4Attempt-5/Hotels.xsd";
 
         public static void Main(string[] args)
         {
