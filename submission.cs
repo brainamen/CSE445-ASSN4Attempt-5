@@ -45,6 +45,7 @@ namespace ConsoleApp1
             settings.Schemas.Add(null, xsdUrl);
             settings.ValidationType = ValidationType.Schema;
             //create a xml reader to read the xml file
+            string errorMsg = "No Error";
             using (XmlReader reader = XmlReader.Create(xmlUrl, settings))
             {
                 try
@@ -54,18 +55,18 @@ namespace ConsoleApp1
                     {
 
                     }
-                    return "No error";
+                    
                 }
                 catch(XmlSchemaValidationException exception)
                 {
-                    return exception.Message;
+                    errorMsg = exception.Message;
                 }
                 catch(Exception exception)
                 {
-                    return exception.Message;
+                    errorMsg = exception.Message;
                 }
             }
-            
+            return errorMsg;
         }
 
         public static string Xml2Json(string xmlUrl)
